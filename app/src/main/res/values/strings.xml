@@ -1,3 +1,268 @@
 <resources>
-    <string name="app_name">Reporte-ciudadano</string>
+    <string name="app_name">Reporte Ciudadano</string>
+
+    <string-array name="tipos_reporte">
+        <item>Selecciona tipo de reporte...</item>
+        <item>ALUMBRADO PÚBLICO</item>
+        <item>ANIMALES CALLEJEROS O EN SITUACIÓN DE ABANDONO</item>
+        <item>BACHES</item>
+        <item>BASURA O ESCOMBRO</item>
+        <item>FUMIGACIÓN O PLAGAS</item>
+        <item>FUGAS O DRENAJE</item>
+        <item>OTRO ASUNTO</item>
+    </string-array>
+
+    <string-array name="colonias_array">
+        <item>Selecciona tu colonia...</item>
+        <item>100 CASAS</item>
+        <item>13 DE JULIO</item>
+        <item>18 DE NOVIEMBRE</item>
+        <item>22 DE NOVIEMBRE</item>
+        <item>23 DE MARZO</item>
+        <item>23 DE NOVIEMBRE</item>
+        <item>29 DE NOVIEMBRE</item>
+        <item>5 DE MAYO</item>
+        <item>ACACIAS</item>
+        <item>ADOLFO DE LA HUERTA</item>
+        <item>ADOLFO LÓPEZ MATEOS</item>
+        <item>AEROCOMANDER</item>
+        <item>AEROPUERTO</item>
+        <item>ALAMO</item>
+        <item>AMÉRICAS</item>
+        <item>AMPLIACIÓN BURÓCRATA</item>
+        <item>AMPLIACIÓN GIL SAMANIEGO</item>
+        <item>AMPLIACIÓN GOLFO DE CALIFORNIA</item>
+        <item>AMPLIACIÓN GUADALUPE</item>
+        <item>AMPLIACIÓN INDEPENDENCIA</item>
+        <item>AMPLIACIÓN MIGUEL HIDALGO</item>
+        <item>ANTENA</item>
+        <item>ANTORCHISTA</item>
+        <item>ARANJUÉZ</item>
+        <item>ARCOS</item>
+        <item>ARRECIFES</item>
+        <item>ATARDECERES</item>
+        <item>AURORA</item>
+        <item>BÁCUM</item>
+        <item>BAHÍA</item>
+        <item>BAUGO</item>
+        <item>BAUTECAS</item>
+        <item>BELEM</item>
+        <item>BELLAVISTA</item>
+        <item>BICENTENARIO</item>
+        <item>BRISAS</item>
+        <item>BUENOS AIRES</item>
+        <item>BUGAMBILIA</item>
+        <item>BURÓCRATA</item>
+        <item>CALICHI</item>
+        <item>CAMPESTRE</item>
+        <item>CAMPO DE TIRO</item>
+        <item>CAMPO NUEVO</item>
+        <item>CANTERA</item>
+        <item>CARACÓL PENINSULA</item>
+        <item>CARACÓL TURÍSTICO</item>
+        <item>CARLOS ROMERO D</item>
+        <item>CASAS BLANCAS</item>
+        <item>CASTILLO</item>
+        <item>CENTENARIO</item>
+        <item>CENTINELA</item>
+        <item>CENTRO</item>
+        <item>CERRO GANDAREÑO</item>
+        <item>CHOYA</item>
+        <item>CHUMAMPACO</item>
+        <item>COLINAS</item>
+        <item>COLINAS DE MIRAMAR</item>
+        <item>COLINAS DEL SOL</item>
+        <item>COLONIA CENTRO</item>
+        <item>COSTA AZUL</item>
+        <item>COUNTRY CLUB</item>
+        <item>CRESTÓN</item>
+        <item>CUADRITA</item>
+        <item>DELICIAS</item>
+        <item>DIAMANTE</item>
+        <item>DORADO</item>
+        <item>EJIDO ÁLVARO OBREGÓN</item>
+        <item>EJIDO FELIPE ÁNGELES</item>
+        <item>EJIDO GRACIANO SÁNCHEZ</item>
+        <item>EJIDO LAZARO CARDENAS</item>
+        <item>EJIDO MARIANO ESCOBEDO</item>
+        <item>EJIDO NUEVO SAN FRANCISCO</item>
+        <item>EJIDO PROFESOR GRACIANO SÁNCHEZ</item>
+        <item>EJIDO SAN FERNANDO</item>
+        <item>EJIDO SANTA MARÍA</item>
+        <item>EJIDO SONORA</item>
+        <item>EMILIANO ZAPATA</item>
+        <item>EMPALME</item>
+        <item>ESTEBAN BACA CALDERÓN</item>
+        <item>FÁTIMA</item>
+        <item>FEMOSA</item>
+        <item>FLORES</item>
+        <item>FOVISSSTE</item>
+        <item>FRANCISCO MÁRQUEZ</item>
+        <item>FUENTE DE PIEDRA</item>
+        <item>FUENTES</item>
+        <item>FUENTES RODRÍGUEZ</item>
+        <item>GIL SAMANIEGO</item>
+        <item>GIL SAMANIEGO 2</item>
+        <item>GOLFO DE CALIFORNIA</item>
+        <item>GOLONDRINAS</item>
+        <item>GUADALUPE</item>
+        <item>GUADALUPE VICTORIA</item>
+        <item>GUARIDA DEL TIGRE</item>
+        <item>GUASIMAS</item>
+        <item>GUAYMAS CENTRO</item>
+        <item>GUAYMAS NORTE</item>
+        <item>HUIRIBIS</item>
+        <item>HUIRIVIS</item>
+        <item>HUMBERTO GUTIÉRREZ</item>
+        <item>INDEPENDENCIA</item>
+        <item>INFONAVIT</item>
+        <item>JACINTO LÓPEZ</item>
+        <item>JARDÍNES</item>
+        <item>JUAN FRANCISCO PATRÓN MÁRQUEZ</item>
+        <item>JUNTAS</item>
+        <item>LINDAVISTA</item>
+        <item>LOMA BONITA</item>
+        <item>LOMA DORADA</item>
+        <item>LOMA LINDA</item>
+        <item>LOMAS DE COLOSIO</item>
+        <item>LOMAS DE CORTÉS</item>
+        <item>LOMAS DE FÁTIMA</item>
+        <item>LOMAS DE MIRAMAR</item>
+        <item>LOMAS DE SAN CARLOS</item>
+        <item>LOMAS DEL GANDAREÑO</item>
+        <item>LOMAS DEL MAR</item>
+        <item>LOMAS MIRAMAR</item>
+        <item>LÓPEZ MATEOS</item>
+        <item>LOS LAGOS</item>
+        <item>LUIS DONALDO COLOSIO</item>
+        <item>MALECÓN</item>
+        <item>MANGA SAN CARLOS</item>
+        <item>MANUEL R BOBADILLA</item>
+        <item>MAR DE CORTÉS</item>
+        <item>MARIANA</item>
+        <item>MARSELLA</item>
+        <item>MICROONDAS</item>
+        <item>MIGUEL HIDALGO</item>
+        <item>MIRADOR</item>
+        <item>MIRAMAR</item>
+        <item>MISA</item>
+        <item>MISIÓN DEL SOL</item>
+        <item>MISIONEROS</item>
+        <item>MONTE BELLO</item>
+        <item>MONTECARLO</item>
+        <item>MONTELOLITA</item>
+        <item>MORENO</item>
+        <item>MURALLA</item>
+        <item>NICOLÁS BRAVO</item>
+        <item>NIZA</item>
+        <item>NUEVO HORIZONTE</item>
+        <item>NUEVO PEÑASCO</item>
+        <item>OCOTILLO</item>
+        <item>OCOTILLO 2</item>
+        <item>OROZ</item>
+        <item>ORTÍZ</item>
+        <item>PALMAS</item>
+        <item>PALO VERDE</item>
+        <item>PARAJE VIEJO</item>
+        <item>PARQUE INDUSTRIAL</item>
+        <item>PEDREGAL</item>
+        <item>PEDREGAL DE QUIROGA</item>
+        <item>PENÍNSULA</item>
+        <item>PERIODISTA</item>
+        <item>PERLA MARINA</item>
+        <item>PERLA MARINA 2</item>
+        <item>PERLAS</item>
+        <item>PESCADORES</item>
+        <item>PESQUERO</item>
+        <item>PETROLERA</item>
+        <item>PETROLEROS</item>
+        <item>PINOS</item>
+        <item>PLAYA DE CORTÉS</item>
+        <item>PLAYA DE MIRAMAR</item>
+        <item>PLAYA VISTA 1</item>
+        <item>PLAYA VISTA 2</item>
+        <item>PLAYITAS</item>
+        <item>PLAYITAS 2</item>
+        <item>PLAZAS</item>
+        <item>POPULAR</item>
+        <item>POTAM</item>
+        <item>PRADERA DORADA</item>
+        <item>PRADERAS</item>
+        <item>PRADOS</item>
+        <item>PUEBLO DE BELÉM</item>
+        <item>PUNTA ARENA</item>
+        <item>PUNTA DE AGUA</item>
+        <item>PUNTA DE LASTRE</item>
+        <item>QUINTAS</item>
+        <item>RAHUN</item>
+        <item>RANCHITO CAMPESTRE</item>
+        <item>RASTRO</item>
+        <item>RASTRO CERRO</item>
+        <item>RASTRO PLAYA</item>
+        <item>REAL DE CORTÉS</item>
+        <item>RENACIMIENTO</item>
+        <item>RESBALÓN</item>
+        <item>RESIDENCIAL MARSELLA</item>
+        <item>RINCÓN DE FÁTIMA</item>
+        <item>RINCÓN DEL BURRO</item>
+        <item>RÍOS</item>
+        <item>ROBLE</item>
+        <item>RODRÍGO DE TRIANA</item>
+        <item>RODRÍGUEZ ALCAINE</item>
+        <item>ROMERO DE CHAMPS</item>
+        <item>SAHUARAL</item>
+        <item>SAHUARI</item>
+        <item>SAHUARIPA</item>
+        <item>SALVACIÓN</item>
+        <item>SAN BERNARDO</item>
+        <item>SAN CARLOS NUEVO GUAYMAS</item>
+        <item>SAN GERMÁN</item>
+        <item>SAN GERÓNIMO</item>
+        <item>SAN GILBERTO</item>
+        <item>SAN JOSÉ</item>
+        <item>SAN JOSÉ DE GUAYMAS</item>
+        <item>SAN MARCIAL</item>
+        <item>SAN MARINO</item>
+        <item>SAN SEBASTIÁN</item>
+        <item>SAN VICENTE</item>
+        <item>SANTA CLARA</item>
+        <item>SANTA FE</item>
+        <item>SANTA MÓNICA</item>
+        <item>SECTOR BAHÍA</item>
+        <item>SECTOR CRESTÓN</item>
+        <item>SEXTA SECCIÓN</item>
+        <item>SIN DOMICILIO FIJO</item>
+        <item>SONORA</item>
+        <item>SUENO</item>
+        <item>TERMOELÉCTRICA</item>
+        <item>TETABIATE</item>
+        <item>TIERRA BONITA</item>
+        <item>TINAJAS</item>
+        <item>TORIN</item>
+        <item>TÓRRES</item>
+        <item>TRIUNFO DE SANTA ROSA</item>
+        <item>TULAR</item>
+        <item>VALIENTE</item>
+        <item>VALLE BONITO</item>
+        <item>VALLE DEL MAR</item>
+        <item>VARAL</item>
+        <item>VERGELES</item>
+        <item>VICAM</item>
+        <item>VILLA SOFIA</item>
+        <item>VILLA ZARINA</item>
+        <item>VILLAHERMOSA</item>
+        <item>VILLAS</item>
+        <item>VILLAS DE MIRAMAR</item>
+        <item>VILLAS DE SAN CARLOS</item>
+        <item>VILLAS DEL PARQUE</item>
+        <item>VILLAS DEL PUERTO I</item>
+        <item>VILLAS DEL PUERTO II</item>
+        <item>VILLAS DEL PUERTO III</item>
+        <item>VILLAS DEL TULAR</item>
+        <item>VILLAS TETAKAWI</item>
+        <item>VISTA AZUL</item>
+        <item>VISTA DORADA</item>
+        <item>YAQUI</item>
+        <item>YUCATÁN</item>
+    </string-array>
 </resources>
