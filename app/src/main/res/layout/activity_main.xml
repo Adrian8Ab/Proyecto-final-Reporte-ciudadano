@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#F8F9FA">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -14,125 +14,135 @@
             android:id="@+id/layoutReporte"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="visible"
-            android:padding="16dp">
+            android:visibility="visible">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="30dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Generar Reporte Ciudadano"
-                    android:textColor="#005088"
-                    android:textSize="22sp"
+                    android:text="Nueva Denuncia"
+                    android:textColor="@color/itson_blue"
+                    android:textSize="26sp"
                     android:textStyle="bold"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completa la información para procesar tu reporte."
+                    android:textColor="@color/gray_text"
+                    android:layout_marginBottom="25dp"/>
 
                 <EditText
                     android:id="@+id/etNombre"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Nombre del interesado"
-                    android:inputType="textPersonName"
-                    android:layout_marginBottom="12dp"/>
+                    android:layout_height="55dp"
+                    android:hint="Nombre completo"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="textPersonName"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Colonia:"
-                    android:textColor="#555555"
-                    android:textSize="14sp" />
-                <Spinner
-                    android:id="@+id/spinnerColonia"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="12dp" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner android:id="@+id/spinnerColonia" android:layout_width="match_parent" android:layout_height="45dp" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/etDireccion"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Dirección exacta"
-                    android:inputType="textPostalAddress"
-                    android:layout_marginBottom="12dp"/>
+                    android:layout_height="55dp"
+                    android:hint="Calle y número"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginBottom="15dp" />
 
                 <EditText
                     android:id="@+id/etCelular"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:hint="Celular"
-                    android:inputType="phone"
-                    android:layout_marginBottom="12dp"/>
-
+                    android:layout_height="55dp"
+                    android:hint="Teléfono celular"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="phone" />
                 <EditText
                     android:id="@+id/etCorreo"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="55dp"
                     android:hint="Correo electrónico"
-                    android:inputType="textEmailAddress"
-                    android:layout_marginBottom="12dp"/>
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:inputType="textEmailAddress" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tipo de incidencia:"
-                    android:textColor="#555555"
-                    android:textSize="14sp" />
-                <Spinner
-                    android:id="@+id/spinnerTipoReporte"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="12dp" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp">
+                    <Spinner android:id="@+id/spinnerTipoReporte" android:layout_width="match_parent" android:layout_height="45dp" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/etDescripcion"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Describe brevemente la problemática..."
-                    android:inputType="textMultiLine"
-                    android:lines="3"
+                    android:layout_height="100dp"
+                    android:hint="Detalles del reporte..."
+                    android:background="@drawable/edittext_border"
+                    android:padding="15dp"
                     android:gravity="top"
-                    android:layout_marginBottom="16dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Evidencia Fotográfica:"
-                    android:textColor="#555555"
-                    android:layout_marginBottom="8dp"/>
-
-                <Button
-                    android:id="@+id/btnSeleccionarImagen"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Seleccionar Imagen"
-                    android:backgroundTint="#005088"
-                    android:textColor="#FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/ivEvidencia"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_marginTop="8dp"
                     android:layout_marginBottom="20dp"
-                    android:background="#EEEEEE"
-                    android:scaleType="centerInside"
-                    android:src="@android:drawable/ic_menu_camera" />
+                    android:inputType="textMultiLine" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginBottom="25dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="#F1F1F1">
+                        <Button
+                            android:id="@+id/btnSeleccionarImagen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Adjuntar Evidencia"
+                            android:backgroundTint="@color/itson_blue" />
+                        <ImageView
+                            android:id="@+id/ivEvidencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="10dp"
+                            android:src="@android:drawable/ic_menu_camera" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
                 <Button
                     android:id="@+id/btnEnviarReporte"
                     android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:text="ENVIAR REPORTE"
-                    android:textSize="16sp"
+                    android:layout_height="60dp"
+                    android:text="ENVIAR REPORTE CIUDADANO"
+                    android:backgroundTint="@color/itson_accent"
                     android:textStyle="bold"
-                    android:backgroundTint="#11caa0"
-                    android:textColor="#FFFFFF" />
-
+                    app:cornerRadius="15dp" />
             </LinearLayout>
         </ScrollView>
 
@@ -147,71 +157,62 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Directorio de Atención"
-                android:textColor="#005088"
-                android:textSize="22sp"
+                android:text="Centro de Atención"
+                android:textColor="@color/itson_blue"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="30dp"
                 android:textAlignment="center"/>
 
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dirección"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ITSON Campus (Oficinas de Reporte)"
-                android:layout_marginBottom="5dp"/>
-            <Button
-                android:id="@+id/btnMapa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mapa"
-                android:backgroundTint="#005088"
-                android:textColor="#FFFFFF"
-                android:layout_marginBottom="25dp"/>
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ubicación" android:textStyle="bold" android:textColor="@color/itson_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Campus ITSON, Unidad Guaymas" android:layout_marginBottom="10dp"/>
+                    <Button android:id="@+id/btnMapa" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ver en Google Maps" android:backgroundTint="@color/itson_blue"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Correo"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="atencion.ciudadana@itson.edu.mx"
-                android:layout_marginBottom="5dp"/>
-            <Button
-                android:id="@+id/btnCorreo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Enviar correo"
-                android:backgroundTint="#005088"
-                android:textColor="#FFFFFF"
-                android:layout_marginBottom="25dp"/>
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Correo Electrónico" android:textStyle="bold" android:textColor="@color/itson_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="atencion@itson.edu.mx" android:layout_marginBottom="10dp"/>
+                    <Button android:id="@+id/btnCorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enviar un mensaje" android:backgroundTint="@color/itson_blue"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Teléfono"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="622 171 1510"
-                android:layout_marginBottom="5dp"/>
-            <Button
-                android:id="@+id/btnLlamar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Llamar"
-                android:backgroundTint="#005088"
-                android:textColor="#FFFFFF" />
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Línea Telefónica" android:textStyle="bold" android:textColor="@color/itson_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="622 171 1510" android:layout_marginBottom="10dp"/>
+                    <Button android:id="@+id/btnLlamar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Llamar ahora" android:backgroundTint="@color/itson_blue"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -220,11 +221,12 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        app:itemIconTint="#005088"
-        app:itemTextColor="#005088"
-        app:menu="@menu/bottom_menu" />
+        android:background="@color/white"
+        app:itemIconTint="@color/itson_blue"
+        app:itemTextColor="@color/itson_blue"
+        app:menu="@menu/bottom_menu"
+        app:elevation="16dp"/>
 
 </RelativeLayout>

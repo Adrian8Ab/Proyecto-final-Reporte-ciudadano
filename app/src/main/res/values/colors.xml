@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="itson_blue">#005088</color>
+    <color name="itson_light_blue">#E6F0F8</color>
+    <color name="itson_accent">#11caa0</color>
+    <color name="gray_text">#555555</color>
+    <color name="border_gray">#D1D1D1</color>
 </resources>
